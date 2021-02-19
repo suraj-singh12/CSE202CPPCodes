@@ -22,6 +22,10 @@ int main()
     int *int_ptr;           //wild pointer
     int *int_ptr2=NULL;      //NULL pointer
 
+    int a=5;
+    void *p1=&a;       //void pointer
+    cout << *(int*)p1 << endl;      // *p1 would not work as it is a void pointer so need to explicitly tell what type of value we want it to dereference to
+
     Student obj("Suraj",21,12);
     Student *s_ptr=&obj;        //class pointer
     
