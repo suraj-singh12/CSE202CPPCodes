@@ -15,6 +15,10 @@ class Student{
     void display(){
         cout << name << " " << roll << " " << clas << '\n';
     }
+    int showDigit(int n){
+        cout << "in overloaded display() with your value " << n << " ;-)\n";
+        return 0;
+    }
 };
 
 int main()
@@ -41,5 +45,9 @@ int main()
     
     void (Student::*showData)(void)=&Student::display;      //pointer to class member function
     (obj.*showData)();
+
+
+    int (Student::*showdigiData)(int)=&Student::showDigit;      //pointer to class member function
+    (obj.*showdigiData)(5);
     return 0;
 }
