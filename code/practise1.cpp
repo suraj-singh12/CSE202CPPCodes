@@ -21,7 +21,7 @@ class B{
     }
 };
 
-void fun
+
 int main()
 {
     A obj1;
