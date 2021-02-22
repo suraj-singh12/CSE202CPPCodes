@@ -8,7 +8,7 @@ class FriendA{
     string password = "99";
     
     public:
-    friend class FriendB;
+    friend class FriendB; 
     // now class FriendB can access private and protected data members of FriendA class
 };
 

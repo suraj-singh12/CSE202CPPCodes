@@ -5,7 +5,7 @@ using namespace std;
 class FriendA{
     private:
     string userName = "Michael";
-    string password = "99";
+    string password = "99"; 
     
     public:
     friend class FriendB;
