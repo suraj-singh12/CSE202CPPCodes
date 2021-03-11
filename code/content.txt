@@ -1,0 +1,1 @@
+Hello, I am creating a c++ file handling program that illustrates the use of seekg() function in file. The file pointer will point at a particular position in file and start displaying till a desired no of words from the file are read. It will stop then.

@@ -1,1 +1,1 @@
-This is the content of my file.
+Hello, this is text written here.
