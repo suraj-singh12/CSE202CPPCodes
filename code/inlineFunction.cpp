@@ -12,6 +12,5 @@ int main()
                                     // no fuction call is made
                                     // this is now equivalent to :
     // cout << "Square of " << num << " is " << n*n;
-    cout <<"\n" << setbase(16) << 100;
     return 0;
 }
