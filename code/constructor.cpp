@@ -24,8 +24,8 @@ class Student{
 int main()
 {
     Student s1("Suraj",21);
-    Student s2=s1;
+    Student s2=s1;      // copy constructor called
     Student s3;
-    s3=s1;
+    s3=s1;      //normal assignment (=)
     return 0;
 }
