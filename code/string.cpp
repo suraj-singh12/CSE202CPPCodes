@@ -35,7 +35,6 @@ using namespace std;
 
 void block1();
 void block2();
-void block3();
 int main()
 {
     block1();
@@ -99,16 +98,3 @@ void block2()
         cout << x << ' ';
     cout << endl;         
 }
-void block3()
-{
-
-}
-
-
-
-
-
-
-
-
-
