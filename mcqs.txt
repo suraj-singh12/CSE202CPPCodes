@@ -1,0 +1,73 @@
+3. Which among the following is false?
+a) Object must be created before using members of a class
+b) Memory for an object is allocated only after its constructor is called
+c) Objects can’t be passed by reference
+d) Objects size depends on its class data members
+View Answer
+
+Answer: c
+Explanation: Objects can be passed by reference. Objects can be passed by value also. If the object of a class is not created, we can’t use members of that class.
+
+5. The object can’t be __________
+a) Passed by reference
+b) Passed by value
+c) Passed by copy
+d) Passed as function
+View Answer
+
+Answer: d
+Explanation: Object can’t be passed as function as it is an instance of some class, it’s not a function. Object can be passed by reference, value or copy. There is no term defined as pass as function for objects.
+
+
+5. Which class/set of classes can illustrate polymorphism in the following code?
+
+abstract class student
+{
+   public : int marks;
+   calc_grade();
+}
+class topper:public student
+{
+    public : calc_grade()
+    {
+        return 10;
+    }
+};
+class average:public student
+{
+     public : calc_grade()
+     {
+         return 20;
+     }
+};
+class failed{ int marks; };
+a) Only class student can show polymorphism
+b) Only class student and topper together can show polymorphism
+c) All class student, topper and average together can show polymorphism
+d) Class failed should also inherit class student for this code to work for polymorphism
+View Answer
+
+Answer: c
+Explanation: Since Student class is abstract class and class topper and average are inheriting student, class topper and average must define the function named calc_grade(); in abstract class. Since both the definition are different in those classes, calc_grade() will work in different way for same input from different objects. Hence it shows polymorphism.
+
+6. Which type of function among the following shows polymorphism?
+a) Inline function
+b) Virtual function
+c) Undefined functions
+d) Class member functions
+View Answer
+
+Answer: b
+Explanation: Only virtual functions among these can show polymorphism. Class member functions can show polymorphism too but we should be sure that the same function is being overloaded or is a function of abstract class or something like this, since we are not sure about all these, we can’t say whether it can show polymorphism or not.
+
+7. In case of using abstract class or function overloading, which function is supposed to be called first?
+a) Local function
+b) Function with highest priority in compiler
+c) Global function
+d) Function with lowest priority because it might have been halted since long time, because of low priority
+View Answer
+
+Answer: b
+Explanation: Function with highest priority is called. Here, it’s not about the thread scheduling in CPU, but it focuses on whether the function in local scope is present or not, or if scope resolution is used in some way, or if the function matches the argument signature. So all these things define which function has the highest priority to be called in runtime. Local function could be one of the answer but we can’t say if someone have used pointer to another function or same function name.
+
+
