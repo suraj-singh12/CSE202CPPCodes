@@ -6,12 +6,12 @@ using namespace std;
 class Years{
     int days;
 public:
-    Years(int);
+    void operator=(int);
     void display();
 };
-Years::Years(int days)
+void Years::operator= (int days)
 {
-    cout << "Basic type to class type using constructor\n";
+    cout << "Basic type to class type using operator overloading\n";
     this->days = days;
 }
 void Years::display()
@@ -26,7 +26,8 @@ int main()
     cout << "Enter the no of days: ";
     cin >> total_days;
 
-    Years y = total_days;
+    Years y;
+    y = total_days;
     y.display();
     return 0;
 }

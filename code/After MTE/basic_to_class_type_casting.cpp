@@ -1,3 +1,5 @@
+// basic to class type casting using constructor
+
 #include <iostream>
 using namespace std;
 
