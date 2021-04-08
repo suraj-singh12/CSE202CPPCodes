@@ -11,7 +11,7 @@ private:
     string name="Suraj";
 public:
     string getString(){
-    return name;
+        return name;
     }
     void display(){
         cout<<name<<endl;
@@ -22,7 +22,7 @@ class B{
     string name2;
 public:
     void operator=(A a){
-    name2=a.getString();
+        name2=a.getString();
     }
     void display(){
         cout<<name2<<endl;

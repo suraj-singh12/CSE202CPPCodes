@@ -3,7 +3,7 @@
 import os
 import re
 files = os.listdir('.')
-pattern = "^[a-zA-Z_]*[a-zA-Z_]$"
+pattern = "^[\w][a-zA-Z0-9_-]*[a-zA-Z0-9_]$"
 
 for file in files:
    is_present = re.search(pattern,file)
