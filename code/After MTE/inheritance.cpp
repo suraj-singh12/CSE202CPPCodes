@@ -1,3 +1,12 @@
+/*
+ * Types of Inheritance in C++
+ * Single Inheritance.
+ * Multiple Inheritance.
+ * Multilevel Inheritance.
+ * Hierarchical Inheritance.
+ * Hybrid Inheritance (also known as Virtual Inheritance)
+ */
+
 #include <iostream>
 using namespace std;
 
