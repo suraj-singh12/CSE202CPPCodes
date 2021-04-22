@@ -1,3 +1,5 @@
+// dynamic memory allocation (allocating memory on heap)
+
 #include <iostream>
 using namespace std;
 int main()
