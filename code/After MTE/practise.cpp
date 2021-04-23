@@ -26,5 +26,11 @@ int main()
     Truck T;
     T.Car1::show();
     T.Car2::show();
+    
+    Truck *tptr;
+    tptr  = new Truck;
+    tptr->Car1::show();
+    delete tptr;
+
     return 0;
 }
