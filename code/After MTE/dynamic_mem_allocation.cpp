@@ -1,4 +1,6 @@
 // dynamic memory allocation (allocating memory on heap)
+// memory is allocated at runtime not on compile time
+// for this purpose 'new' keyword is used
 
 #include <iostream>
 using namespace std;
