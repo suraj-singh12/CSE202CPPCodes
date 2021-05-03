@@ -3,10 +3,11 @@ using namespace std;
 
 int main()
 {
-
+    int x = -1;
     try
     {
-        throw "10error";
+        if (x < 0)
+            throw "10error";
     }
     // below work like switch case, execution of any one / or the default takes place 
     // depending on the type of error thrown
@@ -18,8 +19,8 @@ int main()
     {   cout << x << " is integer";     }
     catch (...)
     {   
-        cout << "error wrong message\n"; // default catch block if no block is executed
+        cout << "error wrong message passed\n"; // default catch block if no block is executed
     }
-
+    cout << "After error";
     return 0;
 }
