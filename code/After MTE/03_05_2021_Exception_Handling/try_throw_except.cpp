@@ -9,8 +9,12 @@ int main()
         if (x < 0)
             throw "10error";
     }
-    // below work like switch case, execution of any one / or the default takes place 
-    // depending on the type of error thrown
+    // below work like switch case, execution of any one catch block or the default catch block takes place depending
+    // on the type of error thrown
+
+    // NOTE: Always keep the default catch block at last, 
+    // otherwise we get a compile time error
+    // because if default catch block is encountered, no other catch block after it will ever be executed.
     catch (float x)
     {   cout << x << "is float";    }
     catch (char x)
