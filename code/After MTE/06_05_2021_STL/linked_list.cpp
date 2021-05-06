@@ -34,6 +34,9 @@ int main()
     cout << endl;
     
     cout << "The list is : " << (li.empty()?"Empty":"Not empty");
+    li.clear();
+    cout << "\nAfter clear: \n";
+    cout << "The list is : " << (li.empty()?"Empty":"Not empty");
     cout << endl;
     return 0;
 }
