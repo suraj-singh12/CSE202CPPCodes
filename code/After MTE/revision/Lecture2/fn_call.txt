@@ -1,0 +1,6 @@
+// at the end of lecture 2 
+
+Function call :- 3types
+1. call by value
+2. call by address
+3. call by reference (In C++ only)
