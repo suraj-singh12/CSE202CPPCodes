@@ -57,4 +57,9 @@ int main()
  -> As leading zeroes are not printed
 
 */
- 
+
+/* NOTE: 
+ -> variable and *&variable are same
+ -> pointers are variables that store address of other variables
+ -> int i = 10, *j, **k, ***l, ****k, .... so on
+ -> j = &i; k=&j; l=&k; m=&l; 
