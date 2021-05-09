@@ -19,19 +19,19 @@ int main()
 
     int *k = &i;
     cout << endl;
-    cout << "k is pointer, pointing to i\n";
+    cout << "k is pointer, pointing to int i\n";
     cout << "Address of k = " << &k << endl;
-    cout << "Value of k = " << k << endl;
-    cout << "Value of k = " << *(&k) << endl;
+    cout << "Address pointed to by = " << k << endl;
+    cout << "Address of k = " << *(&k) << endl;
+    cout << "Value in the address pointed to by ptr k (i.e. value of i) = " << *k << endl;
 
     int  **l = &k;
     cout << endl;
     cout << "l is pointer, pointing to k\n";
     cout << "Address of l = " << &l << endl;
-    cout << "Value of l = " << l << endl;
-    cout << "Value of l = " << *(&l) << endl;
-    cout << "Value in the Value of l = " << **l << endl;
-    // value pointed to by the value (pointer address) of l = i
+    cout << "Address pointed to by l = " << l << endl;       // is the address in l (i.e. address of k)
+    cout << "Address pointed to by l = " << *(&l) << endl;
+    cout << "Double dereferencing l(pointer to pointer) gives the value of i: " << **l << endl;
     // &l - address of l
     // l - value of l (i.e. address of the pointer it is pointing to)
     // *l - value in the address pointed to by l ( i.e. value in k (i.e. address of i))
