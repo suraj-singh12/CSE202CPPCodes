@@ -1,5 +1,5 @@
 //Pure virtual function and Abstract Class
- 
+// run time polymorphism
 #include <iostream>
 using namespace std;
 

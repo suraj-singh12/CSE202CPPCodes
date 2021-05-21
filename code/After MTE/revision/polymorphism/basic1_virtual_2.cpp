@@ -1,5 +1,5 @@
 // Program to show working of an array of upcasted pointers
-
+// this also shows run time polymorphism
 #include <iostream>
 using namespace std;
 

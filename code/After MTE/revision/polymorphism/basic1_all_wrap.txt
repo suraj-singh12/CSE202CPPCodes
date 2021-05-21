@@ -15,3 +15,21 @@ Abstract Class:
 1. A virtual function is 'early binded' "if called through it's own class's object"
 
 2. A virtual function is 'late binded' "if called through pointer" (upcasted or not doesn't matter)        [as shown in all examples, the draw() fn was called by using upcasted pointer, so it was late binded]
+
+
+------------------------------------------------------------------------------------------------
+NOTE:
+------------------------------------------------------------------------------------------------
+An empty class appears empty but is not empty
+It has 4 member functions automatically present in it
+1. zero argument constructor
+2. destructor
+3. copy constructor
+4. overloaded assignment
+
+eg. 
+class Student{
+
+};
+// This class has all those 4 member functions
+---------------------------------------------------------------------------------------------------
