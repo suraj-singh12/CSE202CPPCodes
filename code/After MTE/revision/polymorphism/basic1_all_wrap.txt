@@ -1,0 +1,17 @@
+Upcasted pointer:
+--------------------------------------------
+Derived d;
+Base *b = &d;   // b is an upcasted pointer 
+--------------------------------------------
+
+Abstract Class:
+--------------------------------------------
+->Contains 'atleast' one pure virtual function
+->'May' contain non-virtual functions
+->Object creation not possible
+--------------------------------------------
+
+
+1. A virtual function is 'early binded' "if called through it's own class's object"
+
+2. A virtual function is 'late binded' "if called through pointer" (upcasted or not doesn't matter)        [as shown in all examples, the draw() fn was called by using upcasted pointer, so it was late binded]

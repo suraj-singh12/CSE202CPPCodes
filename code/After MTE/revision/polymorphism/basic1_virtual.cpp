@@ -1,5 +1,5 @@
-// program to show working of an array of upcasted pointers
-
+// before proceeding to this program, ensure you have gone through program `basic1.cpp'
+// it shows run time polymorphism, as we use virtual functions so compiler resolves calls at runtime
 #include <iostream>
 using namespace std;
 

@@ -1,4 +1,5 @@
-// before proceeding to this program, ensure you have gone through program `basic1.cpp'
+// Program to show working of an array of upcasted pointers
+
 #include <iostream>
 using namespace std;
 

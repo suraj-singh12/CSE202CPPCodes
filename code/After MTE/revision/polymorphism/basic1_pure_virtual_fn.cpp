@@ -1,14 +1,18 @@
-//creating array of upcasted pointers 
-
-// before proceeding to this program, ensure you have gone through program `basic1.cpp'
+//Pure virtual function and Abstract Class
+ 
 #include <iostream>
 using namespace std;
 
 class Shape{
     public:
-     virtual void draw(){               // this is a virtual function now
-         cout << "Shape\n";
-     }
+     virtual void draw() = 0;
+     //now above draw() fn is a `pure virtual function`
+
+     /*
+      * NOTE: no one can call this function (as it is pure virtual)
+      * Since this class 'Shape' has pure virtual function in it, so it becomes an `ABSTRACT CLASS`
+      * and so no one can create an object of this class now
+      * */
 };
 
 class Circle : public Shape{
@@ -29,6 +33,8 @@ int main()
 {
     Circle c1,c2,c3,c4,c5;
     Rectangle r1,r2,r3,r4,r5;
+
+    // NOTE: A pointer of an abstract class can be created, but not an object
     Shape *p[10] = {&c1,&c2,&c3,&c4,&c5,&r1,&r2,&r3,&r4,&r5};
     /* Note: *p[] : is an array of pointers
      * NOTE: (a pointer of base class storing the memory address of an object of derived class is called an upcasted pointer)
