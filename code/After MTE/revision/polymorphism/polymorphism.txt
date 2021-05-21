@@ -1,0 +1,23 @@
+--------------------
+Polymorphism
+--------------------
+1. Compile Time
+2. Run Time
+--------------------
+
+Note : Deciding which version of overloaded function/operator/or else to call is called Binding.
+
+=> Compile Time polymorphism
+a) Function Overloading
+b) Operator Overloading
+
+How Compile time?
+The function calls are resolved at compile time
+(also called Early Binding)
+
+----------------------
+
+When compiler is not able to decide which one function to call (probably because of call depends on user input), 
+it postpones the decision til runtime.
+
+Run time Polymorphism also called Late Binding (binding done at run-time)
