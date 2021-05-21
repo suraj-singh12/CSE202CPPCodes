@@ -18,7 +18,7 @@ class Circle : public Shape{
 
 class Rectangle : public Shape{
     public:
-     void draw(){
+     void draw(){   
          cout << "Rectangle\n";
      }
 };

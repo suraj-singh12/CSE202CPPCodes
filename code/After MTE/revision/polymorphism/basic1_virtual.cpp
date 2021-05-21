@@ -1,10 +1,11 @@
-// before proceeding to this program, ensure you have gone through program `basic1.cpp'
+// program to show working of an array of upcasted pointers
+
 #include <iostream>
 using namespace std;
 
 class Shape{
     public:
-     virtual void draw(){
+     virtual void draw(){               // this is a virtual function now
          cout << "Shape\n";
      }
 };
@@ -22,7 +23,6 @@ class Rectangle : public Shape{
          cout << "Rectangle\n";
      }
 };
-
 int main()
 {
     Shape *p;
