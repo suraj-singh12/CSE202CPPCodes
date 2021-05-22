@@ -30,6 +30,20 @@ int main()
         // read 79 characters (79char + '\0' = 80 char) or read till '\n' is detected, which ever comes first
         cout << str << endl;
         outfile << str;     // send str content into outfile
+        //or
+        //outfile.write(str,sizeof(str));
     }
+    
+    /* or my style
+    string mystr;
+    while(infile){
+        getline(infile,mystr);  // reads one full line (of any length, till the '\n' char is not encountered)
+        cout << mystr << endl;
+        outfile << mystr;
+    }
+    */
+
+    infile.close();
+    outfile.close();
     return 0;
 }

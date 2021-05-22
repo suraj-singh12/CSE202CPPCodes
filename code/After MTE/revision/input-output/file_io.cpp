@@ -30,5 +30,7 @@ int main()
         cout << ch;
         outfile.put(ch);    // it is by value
     }
+    infile.close();
+    outfile.close();
     return 0;
 }
