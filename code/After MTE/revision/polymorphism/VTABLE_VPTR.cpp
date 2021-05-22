@@ -160,14 +160,17 @@ int main()
  * Conditions for Late Bindig (runtime polymorphism):
  *
  * Early binding 
- * -> When function is called using object
+ * -> When function is called using object, everything is early binded, (VPTR and VTABLE play no role, even if present (they will be present if the class contains a virtual function, but will still play no role if call is made using object))
  * -> no late binding when called using object, even if the function is virtual
  * 
  * Late Binding
+ * ==>> for virtual table mechanism all these 4 conditions need to be met:
+ * -------------------------------------------------------------------------------------------------------
  * -> There must be inheritance
  * -> Function names and signatures in BASE and DERIVED must be same
  * -> In BASE class function must be virtual
  * -> Call must be made using pointer of the base class pointing to an object of derived(upcasted pointer)
+ * -------------------------------------------------------------------------------------------------------
  * -> then derived's version of that function will be invoked
  * -> This is run time polymorphism
  * */
