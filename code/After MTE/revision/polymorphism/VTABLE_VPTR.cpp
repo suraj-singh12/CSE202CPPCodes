@@ -155,3 +155,19 @@ int main()
     */
     return 0;
 }
+
+/*
+ * Conditions for Late Bindig (runtime polymorphism):
+ *
+ * Early binding 
+ * -> When function is called using object
+ * -> no late binding when called using object, even if the function is virtual
+ * 
+ * Late Binding
+ * -> There must be inheritance
+ * -> Function names and signatures in BASE and DERIVED must be same
+ * -> In BASE class function must be virtual
+ * -> Call must be made using pointer of the base class pointing to an object of derived(upcasted pointer)
+ * -> then derived's version of that function will be invoked
+ * -> This is run time polymorphism
+ * */
