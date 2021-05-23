@@ -1,0 +1,45 @@
+        Containers
+
+=> Sequential Containers
+Represent linear data structures
+vector, deque, and list
+
+=> Associative Containers
+Store sets of keys or maps of key-value pair
+set, multiset, map, and multimap
+
+=> Derived Containers
+Derived from Sequential Containers
+Stack, queue, priority_queue
+
+
+        Iterators
+
+=> Purpose
+Go through all the items in a Container
+
+=> Types
+Input - can R, start to end, 1-pass algos
+Output - can W, start to end, 1-pass algos
+Forward - Can R/W, start to end, 1-pass algos
+Bi-directional - can R/W, bi-directional, multi-pass
+Random - can R/W, bidirectional, multi-pass
+
+=>Examples
+vector, deque - random access
+list, set, multiset, map, multimap - bidirectional
+stack, queue, prioirity_queue - no iterators supported
+
+        Algorithms
+=> Algos are Template functions
+Perform common operations
+Insertion, deletion, searching, sorting
+comparing elements or entire Containers
+
+=> Algorithms
+Use iterators to access container elements
+May return results as iterator
+
+=> Will an algo work on a container
+Depends on iterator type that container supports
+All algos work on containers with random-access iterator
