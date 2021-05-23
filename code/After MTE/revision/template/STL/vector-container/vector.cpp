@@ -1,5 +1,7 @@
 // see clas_template.cpp file in class-template
-
+// NOTE: 
+// vectors are better than arrays because vectors can dynamically grow and shrink
+// but yes, the insertion and deletion operation is costlier in vectors, so for that we have another container in STL, i.e. Linked list.
 #include <vector>
 #include <iostream>
 using namespace std;
