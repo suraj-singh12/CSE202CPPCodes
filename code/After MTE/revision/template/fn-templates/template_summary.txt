@@ -1,0 +1,3 @@
+Two types of templates
+1. Function templates
+2. Class templates

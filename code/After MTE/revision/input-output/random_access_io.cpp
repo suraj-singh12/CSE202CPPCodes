@@ -12,3 +12,4 @@
  * Position put pointer
  *  file.seekp(56L);    //set at write pointer at 56th byte
  *  file.seekp(0L,ios::beg);    // set the write pointer at 0th byte from beggining of the file (i.e. go to the start of the file)
+ * */

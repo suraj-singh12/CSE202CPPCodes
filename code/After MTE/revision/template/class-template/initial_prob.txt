@@ -1,0 +1,14 @@
+Problem:
+->Suppose we have to Maintain
+ * A Stack of integers
+ * A Stack of floats
+
+Solution:
+ * IntStack - class for maintaining stack of integers
+ * FloatStack - class for maintaining stack of floats
+
+Better Solution:
+ * Stack - generic class for stack of any type
+ * Let compiler generate specific versioins of this class
+
+implementation in clas_template.cpp
